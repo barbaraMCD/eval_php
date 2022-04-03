@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width:100%;
+    background-color: white;
+}
+header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+.brand {
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.brand > img {
+    height: 2em;
+}
+
+.co_web a:hover {
+    transform: translate(0%, -10%);
+}
+
+.co_web button:hover {
+    transform: translate(0%, -10%);
+}
+.co_web {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 2em;
+    gap: 1em;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    min-height: 90vh;
+    width: 100%;
+    background: url("https://images3.alphacoders.com/206/thumb-1920-206717.jpg");
+    background-size: cover;
+    padding: 2em;
+    gap: 2em;
+
+}
+
+#form_adm {
+    height: 15em;
+    width: 50%;
+    border: solid;
+    border-radius: 2em;
+    background-color: black;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: absolute; /* La position est absolute et le form est hors du main 
+    pour eviter au formulaire d'etre display:none lorsque je clique sur la page */
+    margin-top: -8em;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+}
+
+#valid {
+    color: rgb(152, 182, 107);
+    height: 3em;
+    width: 10em;
+    border: 0.2em solid rgb(152, 182, 107);
+    border-radius: 2em;
+    background-color: white;
+}
+#adm {
+    background-color: white;
+    border: 0;
+}
+button:active {
+    transform: scale(0.9);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 22em;
+    width: 20em;
+    color: rgb(152, 182, 107);
+    background-color: black;
+    border-radius: 1em;
+    border: SOLID;
+    gap: 0.3em;
+}
+
+.product:nth-child(2) {
+    height: 27em;
+}
+.product:last-child {
+    height: 12em;
+}
+
+
+.adding {
+    background-color: white;
+    color: rgb(152, 182, 107);
+    border: 0;
+    margin-top: 0.5em;
+    border-radius: 2em;
+    width: 6em;
+    height: 2em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+    width: 20em;
+    color: white;
+    background-color: black;
+    border-radius: 1em;
+    border: SOLID;
+    gap: 1em;
+    font-weight: bold;
+    }
+
+article > img {
+    height: 8em;
+    border-radius: 0.2em;
+}
+#titre {
+   font-size: x-large;
+}
+
+.btn {
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 584px) {
+    header {
+        justify-content: center;
+        padding: 0 1em 0 1em;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .co_ordi {
+        font-size: xx-small;
+        transform: scale(0);
+    }
+    #form_adm {
+       margin-bottom: 100em;
+    }
+}
