@@ -21,8 +21,8 @@ if(!isset($_SESSION["is_connected"]) or $_SESSION["is_connected"] == false) {
     $_SESSION["is_connected"] = true;
     $_SESSION["adm"] = $adm;
     } else {
-    header("location: eval.php");
-    session_destroy();
+      header("location: eval.php");
+      session_destroy();
     die();
     }
   };
